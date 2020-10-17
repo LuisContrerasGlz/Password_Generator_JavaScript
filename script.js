@@ -6,33 +6,33 @@ function generatePassword(){
    var numero = 0
    var seleccion=""
    while (numero<8 || numero>128){
-        var n_caracteres = prompt("Cuantos caracteres deseas (entre 8 y 128 caracteres)");
+        var n_caracteres = prompt("How many characters do you want (between 8 and 128 characters)");
         numero=parseInt(n_caracteres);
    }
-   seleccion="solicitaste "+n_caracteres+" caracteres";
-   op_min=confirm("¿Deseas usar minusculas?");
+   seleccion="You want "+n_caracteres+" characters";
+   op_min=confirm("Do you want to use lower case?");
    if (op_min){ 
-      seleccion=seleccion+" Aceptaste minusculas";
+      seleccion=seleccion+" You want lower case";
     }else{
-      seleccion=seleccion+" NO Aceptaste minusculas";
+      seleccion=seleccion+" NO lower case";
     }
-    op_may=confirm("¿Deseas usar mayusculas?");
+    op_may=confirm("Do you want to use capital letters?");
     if (op_may){ 
-      seleccion=seleccion+" Aceptaste mayusculas";
+      seleccion=seleccion+" capital letters accepted";
     }else{
-      seleccion=seleccion+" NO Aceptaste mayusculas";
+      seleccion=seleccion+" NO capital letters?";
     }
-    op_num=confirm("¿Deseas usar numeros?");
+    op_num=confirm("Do you want to use numbers?");
     if (op_num){ 
-      seleccion=seleccion+" Aceptaste numeros";
+      seleccion=seleccion+" You accepted numbers";
     }else{
-      seleccion=seleccion+" NO Aceptaste numeros";
+      seleccion=seleccion+" NO numbers";
     }
-    op_car=confirm("¿Deseas usar caracteres especiales?");
+    op_car=confirm("Do you want to use special characters?");
     if (op_car){ 
-      seleccion=seleccion+" Aceptaste caracteres especiales";
+      seleccion=seleccion+" special characters accepted";
     }else{
-      seleccion=seleccion+" NO Aceptaste caracteres especiales";
+      seleccion=seleccion+" NO special characters";
     }
     alert(seleccion);
     
